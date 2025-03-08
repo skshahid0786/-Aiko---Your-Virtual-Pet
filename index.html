@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aiko - Virtual Pet</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+
+    <!-- Title -->
+    <h1>🐾 Aiko - Your Virtual Pet</h1>
+
+    <!-- Character Selection -->
+    <div class="selection-container">
+        <label for="outfit-select">Select Outfit:</label>
+        <select id="outfit-select" onchange="changeOutfit()">
+            <option value="Casual">Casual</option>
+            <option value="Gym">Gym</option>
+            <option value="SummerUniform">Summer Uniform</option>
+            <option value="WinterUniform">Winter Uniform</option>
+        </select>
+    </div>
+    
+    <!-- Game Container -->
+    <div id="game-container">
+        <div id="speech-box"></div>
+        <img id="aiko-img" src="Casual/Aiko_Frown.png" alt="Aiko's Mood" onclick="touchAiko()">
+
+        <div class="actions">
+            <button onclick="interact('feed')">🍎 Feed</button>
+            <button onclick="interact('talk')">💬 Talk</button>
+            <button onclick="playGame()">🎮 Play</button>
+        </div>
+    </div>
+
+    <!-- Script Files -->
+    <script src="script.js"></script>
+</body>
+</html>

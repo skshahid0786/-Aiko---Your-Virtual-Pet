@@ -151,5 +151,9 @@ function showDialogue(dialogueList) {
 }
 
 function playGame() {
-    window.open("http://cdn.htmlgames.com/Bubble_Shooter/index.html?bgcolor=white", "_blank");
+    window.open("game.html", "_blank");
 }
+
+
+
+
